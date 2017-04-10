@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD78F0EF1E9B648A0005ADFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78F0EE1E9B648A0005ADFD /* main.m */; };
+		CD78F0F21E9B648A0005ADFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78F0F11E9B648A0005ADFD /* AppDelegate.m */; };
+		CD78F0F51E9B648A0005ADFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78F0F41E9B648A0005ADFD /* ViewController.m */; };
+		CD78F0F81E9B648A0005ADFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD78F0F61E9B648A0005ADFD /* Main.storyboard */; };
+		CD78F0FA1E9B648A0005ADFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD78F0F91E9B648A0005ADFD /* Assets.xcassets */; };
+		CD78F0FD1E9B648A0005ADFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD78F0FB1E9B648A0005ADFD /* LaunchScreen.storyboard */; };
+		CD78F1081E9B648A0005ADFD /* ZHNTempStatusHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78F1071E9B648A0005ADFD /* ZHNTempStatusHelperTests.m */; };
+		CD78F1131E9B648A0005ADFD /* ZHNTempStatusHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78F1121E9B648A0005ADFD /* ZHNTempStatusHelperUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD78F1041E9B648A0005ADFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD78F0E21E9B648A0005ADFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD78F0E91E9B648A0005ADFD;
+			remoteInfo = ZHNTempStatusHelper;
+		};
+		CD78F10F1E9B648A0005ADFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD78F0E21E9B648A0005ADFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD78F0E91E9B648A0005ADFD;
+			remoteInfo = ZHNTempStatusHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD78F0EA1E9B648A0005ADFD /* ZHNTempStatusHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHNTempStatusHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78F0EE1E9B648A0005ADFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD78F0F01E9B648A0005ADFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD78F0F11E9B648A0005ADFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD78F0F31E9B648A0005ADFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD78F0F41E9B648A0005ADFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD78F0F71E9B648A0005ADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD78F0F91E9B648A0005ADFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD78F0FC1E9B648A0005ADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD78F0FE1E9B648A0005ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD78F1031E9B648A0005ADFD /* ZHNTempStatusHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHNTempStatusHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78F1071E9B648A0005ADFD /* ZHNTempStatusHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNTempStatusHelperTests.m; sourceTree = "<group>"; };
+		CD78F1091E9B648A0005ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD78F10E1E9B648A0005ADFD /* ZHNTempStatusHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHNTempStatusHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78F1121E9B648A0005ADFD /* ZHNTempStatusHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNTempStatusHelperUITests.m; sourceTree = "<group>"; };
+		CD78F1141E9B648A0005ADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD78F0E71E9B648A0005ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F1001E9B648A0005ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F10B1E9B648A0005ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD78F0E11E9B648A0005ADFD = {
+			isa = PBXGroup;
+			children = (
+				CD78F0EC1E9B648A0005ADFD /* ZHNTempStatusHelper */,
+				CD78F1061E9B648A0005ADFD /* ZHNTempStatusHelperTests */,
+				CD78F1111E9B648A0005ADFD /* ZHNTempStatusHelperUITests */,
+				CD78F0EB1E9B648A0005ADFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD78F0EB1E9B648A0005ADFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD78F0EA1E9B648A0005ADFD /* ZHNTempStatusHelper.app */,
+				CD78F1031E9B648A0005ADFD /* ZHNTempStatusHelperTests.xctest */,
+				CD78F10E1E9B648A0005ADFD /* ZHNTempStatusHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD78F0EC1E9B648A0005ADFD /* ZHNTempStatusHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CD78F0F01E9B648A0005ADFD /* AppDelegate.h */,
+				CD78F0F11E9B648A0005ADFD /* AppDelegate.m */,
+				CD78F0F31E9B648A0005ADFD /* ViewController.h */,
+				CD78F0F41E9B648A0005ADFD /* ViewController.m */,
+				CD78F0F61E9B648A0005ADFD /* Main.storyboard */,
+				CD78F0F91E9B648A0005ADFD /* Assets.xcassets */,
+				CD78F0FB1E9B648A0005ADFD /* LaunchScreen.storyboard */,
+				CD78F0FE1E9B648A0005ADFD /* Info.plist */,
+				CD78F0ED1E9B648A0005ADFD /* Supporting Files */,
+			);
+			path = ZHNTempStatusHelper;
+			sourceTree = "<group>";
+		};
+		CD78F0ED1E9B648A0005ADFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD78F0EE1E9B648A0005ADFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD78F1061E9B648A0005ADFD /* ZHNTempStatusHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD78F1071E9B648A0005ADFD /* ZHNTempStatusHelperTests.m */,
+				CD78F1091E9B648A0005ADFD /* Info.plist */,
+			);
+			path = ZHNTempStatusHelperTests;
+			sourceTree = "<group>";
+		};
+		CD78F1111E9B648A0005ADFD /* ZHNTempStatusHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD78F1121E9B648A0005ADFD /* ZHNTempStatusHelperUITests.m */,
+				CD78F1141E9B648A0005ADFD /* Info.plist */,
+			);
+			path = ZHNTempStatusHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD78F0E91E9B648A0005ADFD /* ZHNTempStatusHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD78F1171E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelper" */;
+			buildPhases = (
+				CD78F0E61E9B648A0005ADFD /* Sources */,
+				CD78F0E71E9B648A0005ADFD /* Frameworks */,
+				CD78F0E81E9B648A0005ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHNTempStatusHelper;
+			productName = ZHNTempStatusHelper;
+			productReference = CD78F0EA1E9B648A0005ADFD /* ZHNTempStatusHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD78F1021E9B648A0005ADFD /* ZHNTempStatusHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD78F11A1E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelperTests" */;
+			buildPhases = (
+				CD78F0FF1E9B648A0005ADFD /* Sources */,
+				CD78F1001E9B648A0005ADFD /* Frameworks */,
+				CD78F1011E9B648A0005ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD78F1051E9B648A0005ADFD /* PBXTargetDependency */,
+			);
+			name = ZHNTempStatusHelperTests;
+			productName = ZHNTempStatusHelperTests;
+			productReference = CD78F1031E9B648A0005ADFD /* ZHNTempStatusHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD78F10D1E9B648A0005ADFD /* ZHNTempStatusHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD78F11D1E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelperUITests" */;
+			buildPhases = (
+				CD78F10A1E9B648A0005ADFD /* Sources */,
+				CD78F10B1E9B648A0005ADFD /* Frameworks */,
+				CD78F10C1E9B648A0005ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD78F1101E9B648A0005ADFD /* PBXTargetDependency */,
+			);
+			name = ZHNTempStatusHelperUITests;
+			productName = ZHNTempStatusHelperUITests;
+			productReference = CD78F10E1E9B648A0005ADFD /* ZHNTempStatusHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD78F0E21E9B648A0005ADFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zhn;
+				TargetAttributes = {
+					CD78F0E91E9B648A0005ADFD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CD78F1021E9B648A0005ADFD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD78F0E91E9B648A0005ADFD;
+					};
+					CD78F10D1E9B648A0005ADFD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD78F0E91E9B648A0005ADFD;
+					};
+				};
+			};
+			buildConfigurationList = CD78F0E51E9B648A0005ADFD /* Build configuration list for PBXProject "ZHNTempStatusHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD78F0E11E9B648A0005ADFD;
+			productRefGroup = CD78F0EB1E9B648A0005ADFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD78F0E91E9B648A0005ADFD /* ZHNTempStatusHelper */,
+				CD78F1021E9B648A0005ADFD /* ZHNTempStatusHelperTests */,
+				CD78F10D1E9B648A0005ADFD /* ZHNTempStatusHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD78F0E81E9B648A0005ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78F0FD1E9B648A0005ADFD /* LaunchScreen.storyboard in Resources */,
+				CD78F0FA1E9B648A0005ADFD /* Assets.xcassets in Resources */,
+				CD78F0F81E9B648A0005ADFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F1011E9B648A0005ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F10C1E9B648A0005ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD78F0E61E9B648A0005ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78F0F51E9B648A0005ADFD /* ViewController.m in Sources */,
+				CD78F0F21E9B648A0005ADFD /* AppDelegate.m in Sources */,
+				CD78F0EF1E9B648A0005ADFD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F0FF1E9B648A0005ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78F1081E9B648A0005ADFD /* ZHNTempStatusHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD78F10A1E9B648A0005ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD78F1131E9B648A0005ADFD /* ZHNTempStatusHelperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD78F1051E9B648A0005ADFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD78F0E91E9B648A0005ADFD /* ZHNTempStatusHelper */;
+			targetProxy = CD78F1041E9B648A0005ADFD /* PBXContainerItemProxy */;
+		};
+		CD78F1101E9B648A0005ADFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD78F0E91E9B648A0005ADFD /* ZHNTempStatusHelper */;
+			targetProxy = CD78F10F1E9B648A0005ADFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD78F0F61E9B648A0005ADFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD78F0F71E9B648A0005ADFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD78F0FB1E9B648A0005ADFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD78F0FC1E9B648A0005ADFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD78F1151E9B648A0005ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD78F1161E9B648A0005ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD78F1181E9B648A0005ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZHNTempStatusHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD78F1191E9B648A0005ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZHNTempStatusHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD78F11B1E9B648A0005ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZHNTempStatusHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHNTempStatusHelper.app/ZHNTempStatusHelper";
+			};
+			name = Debug;
+		};
+		CD78F11C1E9B648A0005ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZHNTempStatusHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHNTempStatusHelper.app/ZHNTempStatusHelper";
+			};
+			name = Release;
+		};
+		CD78F11E1E9B648A0005ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZHNTempStatusHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZHNTempStatusHelper;
+			};
+			name = Debug;
+		};
+		CD78F11F1E9B648A0005ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZHNTempStatusHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhn.ZHNTempStatusHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZHNTempStatusHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD78F0E51E9B648A0005ADFD /* Build configuration list for PBXProject "ZHNTempStatusHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78F1151E9B648A0005ADFD /* Debug */,
+				CD78F1161E9B648A0005ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD78F1171E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78F1181E9B648A0005ADFD /* Debug */,
+				CD78F1191E9B648A0005ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD78F11A1E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78F11B1E9B648A0005ADFD /* Debug */,
+				CD78F11C1E9B648A0005ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD78F11D1E9B648A0005ADFD /* Build configuration list for PBXNativeTarget "ZHNTempStatusHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78F11E1E9B648A0005ADFD /* Debug */,
+				CD78F11F1E9B648A0005ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD78F0E21E9B648A0005ADFD /* Project object */;
+}
