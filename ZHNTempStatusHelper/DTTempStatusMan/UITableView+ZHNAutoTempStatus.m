@@ -52,6 +52,7 @@ void zhn_tempStatus_swizzingMethod(Class class,SEL orig,SEL new){
         NSInteger row = [src tableView:self numberOfRowsInSection:index];
         if (row) {
             isEmpty = NO;
+            break;
         }
     }
     // 添加placeHolder
