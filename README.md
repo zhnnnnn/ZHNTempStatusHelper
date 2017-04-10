@@ -1,0 +1,2 @@
+# ZHNTempStatusHelper
+轻松添加tableview数据为空的时候的站位视图功能，实现的思路差不多和https://github.com/ChenYilong/CYLTableViewPlaceHolder一样，但是在使用的过程当中发现这个库的侵入性还是稍微大了一点点，而且数据为空但是为空的情况不一样的情况下还是有些问题。稍作了修改。
