@@ -39,7 +39,7 @@ void zhn_tempStatus_swizzingMethod(Class class,SEL orig,SEL new){
 #pragma mark - pravite Methods
 - (void)p_checkEmpty {
     UIView *tempPlaceholderView = [self.superViewController ZHN_tempStatusPlaceholderView];
-    BOOL enableScroll = [self.superViewController ZHN_tempStatusEnableTableViewScrollView];
+    BOOL enableScroll = [self.superViewController ZHN_tempStatusEnableTableViewScroll];
     if (!tempPlaceholderView) {return;}
     // 检查空状态
     BOOL isEmpty = YES;

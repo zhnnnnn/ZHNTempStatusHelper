@@ -69,7 +69,7 @@
     return tempView;
 }
 
-- (BOOL)ZHN_tempStatusEnableTableViewScrollView {
+- (BOOL)ZHN_tempStatusEnableTableViewScroll {
     return YES;
 }
 @end

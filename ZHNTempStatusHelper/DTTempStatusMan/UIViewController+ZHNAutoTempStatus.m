@@ -13,7 +13,7 @@
 - (UIView *)ZHN_tempStatusPlaceholderView {
     return nil;
 }
-- (BOOL)ZHN_tempStatusEnableTableViewScrollView {
+- (BOOL)ZHN_tempStatusEnableTableViewScroll {
     return NO;
 }
 @end

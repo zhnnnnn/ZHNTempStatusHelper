@@ -10,5 +10,5 @@
 
 @interface UIViewController (ZHNAutoTempStatus)
 - (UIView *)ZHN_tempStatusPlaceholderView;
-- (BOOL)ZHN_tempStatusEnableTableViewScrollView;
+- (BOOL)ZHN_tempStatusEnableTableViewScroll;
 @end
