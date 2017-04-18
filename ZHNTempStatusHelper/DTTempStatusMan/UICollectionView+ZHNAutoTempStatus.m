@@ -1,44 +1,46 @@
 //
-//  UITableView+ZHNAutoTempStatus.m
-//  ZHNtemp
+//  UICollectionView+ZHNAutoTempStatus.m
+//  ZHNTempStatusHelper
 //
-//  Created by zhn on 2017/4/10.
+//  Created by zhn on 2017/4/18.
 //  Copyright © 2017年 zhn. All rights reserved.
 //
 
+#import "UICollectionView+ZHNAutoTempStatus.h"
 #import "UITableView+ZHNAutoTempStatus.h"
 #import "UIViewController+ZHNAutoTempStatus.h"
 
-@interface UITableView()
+@interface UICollectionView()
 @property (nonatomic,strong) UIView *placeHolderView;
 @end
 
-@implementation UITableView (ZHNAutoTempStatus)
+@implementation UICollectionView (ZHNAutoTempStatus)
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        zhn_tempStatus_swizzingMethod([self class], @selector(reloadData), @selector(ZHN_reloadData));
+        zhn_tempStatus_swizzingMethod([self class], @selector(reloadData), @selector(zhn_reloadData));
     });
 }
 
-- (void)ZHN_reloadData {
-    [self ZHN_reloadData];
+- (void)zhn_reloadData {
+    [self zhn_reloadData];
     [self p_checkEmpty];
 }
+
 #pragma mark - pravite Methods
 - (void)p_checkEmpty {
-    UIView *tempPlaceholderView = [self.superViewController ZHN_tempStatusPlaceholderView];
-    BOOL enableScroll = [self.superViewController ZHN_tempStatusEnableTableViewScroll];
+    UIView *tempPlaceholderView = [self.supViewController ZHN_tempStatusPlaceholderView];
+    BOOL enableScroll = [self.supViewController ZHN_tempStatusEnableTableViewScroll];
     if (!tempPlaceholderView) {return;}
     // 检查空状态
     BOOL isEmpty = YES;
-    id <UITableViewDataSource> src = self.dataSource;
+    id <UICollectionViewDataSource> src = self.dataSource;
     NSInteger sections = 1;
-    if ([src respondsToSelector:@selector(numberOfSectionsInTableView:)]) {
-        sections = [src numberOfSectionsInTableView:self];
+    if ([src respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
+        sections = [src numberOfSectionsInCollectionView:self];
     }
     for (int index = 0; index < sections; index++) {
-        NSInteger row = [src tableView:self numberOfRowsInSection:index];
+        NSInteger row = [src collectionView:self numberOfItemsInSection:index];
         if (row) {
             isEmpty = NO;
             break;
@@ -59,21 +61,21 @@
         self.scrollEnabled = YES;
     }
 }
-#pragma mark - getters getters
+
+#pragma mark - setters getters
 - (UIView *)placeHolderView {
     return objc_getAssociatedObject(self, @selector(placeHolderView));
 }
+
 - (void)setPlaceHolderView:(UIView *)placeHolderView {
     objc_setAssociatedObject(self, @selector(placeHolderView), placeHolderView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-
-- (UIViewController *)superViewController {
-    return objc_getAssociatedObject(self, @selector(superViewController));
+- (UIViewController *)supViewController {
+    return objc_getAssociatedObject(self, @selector(supViewController));
 }
 
-- (void)setSuperViewController:(UIViewController *)superViewController {
-    objc_setAssociatedObject(self, @selector(superViewController), superViewController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setSupViewController:(UIViewController *)supViewController {
+    objc_setAssociatedObject(self, @selector(supViewController), supViewController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
 @end
