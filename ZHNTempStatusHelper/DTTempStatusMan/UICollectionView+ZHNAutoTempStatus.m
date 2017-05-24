@@ -9,16 +9,18 @@
 #import "UICollectionView+ZHNAutoTempStatus.h"
 #import "UITableView+ZHNAutoTempStatus.h"
 #import "UIViewController+ZHNAutoTempStatus.h"
+#import "ZHNMethodSwizzingHelper.h"
 
 @interface UICollectionView()
 @property (nonatomic,strong) UIView *placeHolderView;
+@property (nonatomic,assign) BOOL isReloaded;
 @end
 
 @implementation UICollectionView (ZHNAutoTempStatus)
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        zhn_tempStatus_swizzingMethod([self class], @selector(reloadData), @selector(zhn_reloadData));
+        [ZHNMethodSwizzingHelper swizzinClass:[self class] OriginalSEL:@selector(reloadData) TonewSEL:@selector(ZHN_reloadData)];
     });
 }
 
@@ -29,6 +31,10 @@
 
 #pragma mark - pravite Methods
 - (void)p_checkEmpty {
+    if (!self.isReloaded) {
+        self.isReloaded = YES;
+        return;
+    }
     UIView *tempPlaceholderView = [self.supViewController ZHN_tempStatusPlaceholderView];
     BOOL enableScroll = [self.supViewController ZHN_tempStatusEnableTableViewScroll];
     if (!tempPlaceholderView) {return;}
@@ -77,5 +83,13 @@
 
 - (void)setSupViewController:(UIViewController *)supViewController {
     objc_setAssociatedObject(self, @selector(supViewController), supViewController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)isReloaded {
+    return [objc_getAssociatedObject(self, @selector(isReloaded)) boolValue];
+}
+
+- (void)setIsReloaded:(BOOL)isReloaded {
+    objc_setAssociatedObject(self, @selector(isReloaded), @(isReloaded), OBJC_ASSOCIATION_ASSIGN);
 }
 @end
